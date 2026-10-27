@@ -98,7 +98,7 @@ st.markdown("""
 
 # Check the existing FastAPI backend.
 try:
-    health_response = requests.get(f"{API_URL}/health", timeout=5)
+    health_response = requests.get(f"{API_URL}/api/health", timeout=5)
     health_response.raise_for_status()
     backend_online = True
 except requests.RequestException:
